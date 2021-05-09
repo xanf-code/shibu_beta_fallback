@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Header from '../components/Header'
 import Results from '../components/Results'
+import Header from '../components/Header'
 
 export default function Home({ data }) {
   return (
@@ -9,8 +9,7 @@ export default function Home({ data }) {
         <title>Insider Shibu</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* Header */}
-      <div className=" bg-gray-900">
+      <div className="bg-black mb-2">
         <Header />
       </div>
       {/* Body */}

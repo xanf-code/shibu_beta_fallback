@@ -5,8 +5,8 @@ import Trade from './Trade'
 
 function IndividualCard({ result }) {
     return (
-        <div className="box-border h-32 px-2 py-2 bg-black rounded-md 
-        m-3 md:max-w-xl md:mx-auto">
+        <div className="box-border h-32 px-2 py-2 bg-black rounded-md
+        cursor-pointer mr-1.5 ml-1.5 mb-1.5 hover:animate-pulse">
             <div className="flex justify-between">
                 <div className="flex justify-start">
                     <TickerBox text={result.ticker} />
@@ -24,7 +24,7 @@ function IndividualCard({ result }) {
                     <h1 className="truncate max-w-md font-bold font-sans pt-1 pl-1">
                         {result.insiderName}
                     </h1>
-                    <p className="font-sans text-purple-600 font-semibold pl-1 pb-1.5">
+                    <p className="truncate font-sans text-purple-600 font-semibold pl-1 pb-1.5">
                         {result.insiderTitle}
                     </p>
                 </div>

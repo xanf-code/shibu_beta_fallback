@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import HeaderItem from "../components/HeaderItem"
-import { HomeIcon, DownloadIcon, ChatIcon, LightningBoltIcon } from "@heroicons/react/outline"
+import { HomeIcon, DownloadIcon } from "@heroicons/react/outline"
 
 function Header() {
     return (
@@ -20,9 +20,6 @@ function Header() {
                 </Link>
                 <Link href="/download">
                     <HeaderItem Icon={DownloadIcon} />
-                </Link>
-                <Link href="/about">
-                    <HeaderItem Icon={LightningBoltIcon} />
                 </Link>
             </div>
         </header>

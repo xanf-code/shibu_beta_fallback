@@ -5,9 +5,9 @@ import Footer from '../components/Footer'
 function Results({ results }) {
     return (
         <div>
-            <div className="md:grid-cols-3 lg:inline-grid grid-cols-4 gap-x-4 lg:pl-1.5 lg:pr-1.5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {results.result.map((result) => (
-                    <Link key={result._id} href="/insider/[id]" as={`/insider/${result.insiderName}`}>
+                    <Link key={result._id} href="/insider/activity/[id]" as={`/insider/activity/${result.insiderName}`}>
                         <a>
                             <InsiderCard key={result._id} result={result} />
                         </a>
@@ -15,7 +15,7 @@ function Results({ results }) {
                 ))
                 }
             </div >
-            <div className="bg-gray-900">
+            <div className="bg-black">
                 <Footer />
             </div>
         </div>
