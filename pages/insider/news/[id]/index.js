@@ -1,7 +1,6 @@
-//https://seekingalpha.com/api/v3/symbols/WSFS/news?page[size]=10
 import Head from 'next/head'
-
 import Header from '../../../../components/Header'
+
 
 export default function Individual({ results }) {
     console.log(results);

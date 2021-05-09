@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Results from '../components/Results'
 import Header from '../components/Header'
 
+
 export default function Home({ data }) {
   return (
     <div className="flex flex-col h-screen">

@@ -7,19 +7,25 @@ function Header() {
         <header className="flex flex-row sm:flex-row m-5 justify-between
         items-center">
             <Link href="/">
-                <h1 className="text-xl font-bold cursor-pointer">
-                    Insider&nbsp;
-                    <span className="text-purple-600">
-                        Shibu🐕🚀🚀
-                    </span>
-                </h1>
+                <a>
+                    <h1 className="text-xl font-bold cursor-pointer">
+                        Insider&nbsp;
+                        <span className="text-purple-600">
+                            Shibu🐕🚀🚀
+                        </span>
+                    </h1>
+                </a>
             </Link>
             <div className="flex flex-row">
                 <Link href="/">
-                    <HeaderItem Icon={HomeIcon} />
+                    <a>
+                        <HeaderItem Icon={HomeIcon} />
+                    </a>
                 </Link>
                 <Link href="/download">
-                    <HeaderItem Icon={DownloadIcon} />
+                    <a>
+                        <HeaderItem Icon={DownloadIcon} />
+                    </a>
                 </Link>
             </div>
         </header>
